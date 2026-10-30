@@ -18,3 +18,11 @@ El sistema implementa:
 1. Tener instalado **Java JDK** y **Maven**.
 2. Clonar este repositorio o abrirlo en tu entorno de desarrollo favorito (como NetBeans o IntelliJ IDEA) compatible con Maven.
 3. Ejecutar las pruebas unitarias y la clase principal del proyecto.
+## Arquitectura de Selección y Evaluador Lógico
+
+El motor de decisión implementa el patrón de expresiones booleanas para evaluar las tres condiciones principales de acceso:
+* *P*: Usuario registrado en la base de datos local.
+* *Q*: Reserva activa para la sala y franja horaria consultada.
+* *R*: Rango de horario válido (08:00 a 17:00).
+
+El sistema aplica equivalencia lógica estricta comprobada mediante pruebas de escritorio y automatizadas con JUnit.
